@@ -1,0 +1,12 @@
+# Site settings
+title: Jekyll base
+email: dev@adrianhaasler.com
+description: Base project to start a Jekyll based static webpage.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jekyll-base.adrianhaasler.com" # the base hostname & protocol for your site
+twitter_username: ahaasler
+github_username:  ahaasler
+
+# Build settings
+markdown: kramdown
+exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
