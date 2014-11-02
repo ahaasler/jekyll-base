@@ -39,19 +39,73 @@ git clone https://github.com/ahaasler/jekyll-base.git
 # Or use the url of your fork
   ```
 
-1. Install all necessary gems.
+2. Install all necessary *gems*.
 
   ```bash
 # In the root folder of the project
 bundle install
   ```
 
+3. Install *npm* packages.
+
+  ```bash
+#In the root folder of the project
+npm install
+  ```
+
+  > ### Check *grunt*
+  >
+  > To test if *grunt* is installed correctly run:
+  >
+  > ```bash
+grunt --version
+  > ```
+  >
+  > You will see something like:
+  >
+  > ```
+grunt-cli v0.1.13
+grunt v0.4.5
+  > ```
+  >
+  > #### No *grunt*?
+  >
+  > If that's not the case you may need to install *grunt-cli* globally:
+  >
+  > ```bash
+sudo npm install -g grunt-cli
+  > ```
+  >
+  > #### Possible errors:
+  >
+  > * `/usr/bin/env: node: No such file or directory`: If you see this
+  > error running *grunt* your distro may have installed *node* as *nodejs*.
+  > A symlink will do just fine:
+  >
+  >   ```bash
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+  >   ```
+  >
+  > #### Nothing works!
+  >
+  > If you can't make *grunt* work don't worry. You can find the binary in
+  > the `node_modules` folder inside the project's root folder.
+  >
+  > ```bash
+# Create a symlink
+ln -s node_modules/grunt-cli/bin/grunt grunt
+# Now you should be able to use grunt this way:
+./grunt --version
+  > ```
+
 ### Build your page
+
+This project uses [*grunt*](http://gruntjs.com/ "Grunt, the javascript task runner") as automation tool to build itself.
 
 To build the page use the following command:
 
 ```bash
-bundle exec jekyll build
+grunt build
 ```
 
 The page will be generated in a folder called `_site`. This files are ready to be hosted on a server (any server capable of serving static
@@ -62,8 +116,10 @@ files will handle it just fine).
 You can see how the page looks with:
 
 ```bash
-bundle exec jekyll serve
+grunt serve
 ```
+
+> Or simply `grunt` without specifying a task, since the default one is `serve`.
 
 Now go to `http://localhost:4000` in your browser and see how the page would look served by a web server.
 

@@ -1,2 +1,4 @@
 _site/
 .sass-cache/
+*.log
+node_modules/

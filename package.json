@@ -1,0 +1,28 @@
+{
+  "name": "jekyll-base",
+  "version": "0.2.0",
+  "description": "Base project to start a Jekyll based static webpage.",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahaasler/jekyll-base"
+  },
+  "keywords": [
+    "jekyll",
+    "grunt"
+  ],
+  "author": "Adrian Haasler García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahaasler/jekyll-base/issues"
+  },
+  "homepage": "https://github.com/ahaasler/jekyll-base",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-jekyll": "~0.4.2"
+  }
+}
