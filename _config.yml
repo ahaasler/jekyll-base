@@ -9,4 +9,4 @@ github_username:  ahaasler
 
 # Build settings
 markdown: kramdown
-exclude: ['node_modules', 'Gemfile', 'Gemfile.lock', 'Gruntfile.coffee', 'LICENSE', 'package.json', 'README.md', '*.log']
+exclude: ['bower.json', 'node_modules', 'Gemfile', 'Gemfile.lock', 'Gruntfile.coffee', 'LICENSE', 'package.json', 'README.md', '*.log']

@@ -1,0 +1,27 @@
+{
+  "name": "jekyll-base",
+  "version": "0.4.0",
+  "authors": [
+    "Adrian Haasler Garcia <dev@adrianhaasler.com>"
+  ],
+  "description": "Base project to start a Jekyll based static webpage.",
+  "keywords": [
+    "jekyll",
+    "grunt",
+    "browsersync",
+    "bower"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ahaasler/jekyll-base",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

@@ -125,6 +125,25 @@ Now go to `http://localhost:4000` in your browser and see how the page would loo
 
 As long as the command is running you can edit your page and see the changes **live**.
 
+### Add bower dependencies
+
+Let's say you want to use [*jQuery*](http://jquery.com/ "jQuery") in your website. Just add it as a dependency
+in `bower.json` like this:
+
+```json
+"dependencies": {
+  "jquery": "~2.1.1"
+}
+```
+
+and run the *bower* task to download it:
+
+```bash
+grunt bower
+```
+
+This will download *jQuery* and will be available in `lib`.
+
 License
 -------
 
