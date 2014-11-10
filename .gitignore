@@ -4,3 +4,4 @@ _site/
 node_modules/
 lib/
 bower_components/
+*.html

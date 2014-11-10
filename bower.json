@@ -1,6 +1,6 @@
 {
   "name": "jekyll-base",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "authors": [
     "Adrian Haasler Garcia <dev@adrianhaasler.com>"
   ],
@@ -9,7 +9,8 @@
     "jekyll",
     "grunt",
     "browsersync",
-    "bower"
+    "bower",
+    "haml"
   ],
   "license": "MIT",
   "homepage": "https://github.com/ahaasler/jekyll-base",

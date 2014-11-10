@@ -1,0 +1,8 @@
+%head
+  %meta{:charset => "utf-8"}
+  %meta{:content => "width=device-width initial-scale=1", :name => "viewport"}
+  %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+  %title {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+  %meta{:content => "{{ site.description }}", :name => "description"}
+  %link{:rel => "stylesheet", :href => "{{ '/css/main.css' | prepend: site.baseurl }}"}
+  %link{:href => "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}", :rel => "canonical"}
