@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', '>=29'
-gem 'haml', '>=4.0.5'
+gem 'jekyll', '2.5.3'
+gem 'jekyll-mentions', '0.2.1'
+gem 'haml', '4.0.5'
